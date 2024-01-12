@@ -1,0 +1,137 @@
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  align-items: center;
+  background: linear-gradient(30deg, #fefefe, #f4edb5, #7cebd5);
+  display: flex;
+  font-family: "Dosis", sans-serif;
+  font-display: swap;
+  height: inherit;
+  justify-content: center;
+}
+
+.container {
+  backdrop-filter: blur(5.5px);
+  -webkit-backdrop-filter: blur(5.5px);
+  background: rgba(255, 255, 255, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+  color: #232323;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  background: rgb(255, 255, 255, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.34);
+  flex-basis: 95%;
+  padding: 20px 35px;
+  height: 540px;
+}
+
+.container-decription {
+  display: flex;
+  justify-content: center;
+  width: 95%;
+}
+
+.container-decription h2 {
+  font-size: 3rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: darkgreen;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+.container-credits {
+  display: flex;
+  margin: 20px;
+}
+.container-credit {
+  display: inline-block;
+  width: 12%;
+  height: 300px;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  background: rgba(255, 255, 255, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+}
+
+.container-credit-text {
+  display: flex;
+  background: #474242;
+  color: white;
+  border-radius: 20px 20px 0 0;
+  height: 50%;
+}
+
+.paymoney-text {
+  margin: auto;
+  text-align: center;
+}
+.paymoney-text-credit {
+  display: flex;
+}
+
+.paymoney-text-credit h1 {
+  font-size: 4rem;
+}
+
+.paymoney-text-credit p {
+  margin-top: 45px;
+  margin-left: 5%;
+}
+
+.paymoney-link {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.paymoney-link p {
+  color: rgba(65, 68, 65, 0.25);
+  font-size: 1.2rem;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.paymoney-link i {
+  color: rgba(24, 211, 18, 0.75);
+  font-weight: bold;
+  top: 10px;
+}
+
+.paymoney-link a {
+  border: 2px solid rgba(24, 211, 18, 0.75);
+  text-decoration: none;
+  color: rgba(24, 211, 18, 0.75);
+  font-weight: bold;
+  margin-top: 10px;
+  width: 50%;
+  margin: auto;
+  margin-top: 20px;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+.paymoney-link a:hover {
+  background: rgba(9, 146, 5, 0.75);
+  color: white;
+}
+
+.popular {
+  background: rgba(9, 146, 5, 0.75);
+}
+
+.container-credit:hover {
+  transform: scale(1.1);
+  transition-duration: 0.5s;
+}

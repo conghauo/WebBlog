@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Payments Page</title>
+
+    <!-- CSS only -->
+    <link
+      rel="stylesheet"
+      href="../css/bootstrap-icons-1.9.1/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../css/fontawesome-free-6.2.0-web/css/all.css"
+    />
+    <link rel="stylesheet" href="../css/bootstrap3.3.5.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Sidebar Holder -->
+      <nav id="sidebar">
+        <div class="sidebar-header" id="sidebar-title">
+          <h3><i class="bi bi-envelope-paper-heart-fill"></i> Admin Page</h3>
+          <strong><i class="bi bi-list"></i></strong>
+        </div>
+
+        <ul class="list-unstyled components">
+          <li class="">
+            <a href="./index.html">
+              <i class="bi bi-house"></i>
+              Home
+            </a>
+          </li>
+          <li class="">
+            <a href="./game1.html">
+              <i class="bi bi-image"></i>
+              Game 1
+            </a>
+          </li>
+          <li class="">
+            <a href="./game2_new.html">
+              <i class="bi bi-image"></i>
+              Game 2
+            </a>
+          </li>
+          <li class="active">
+            <a href="./payments.html">
+              <i class="bi bi-cash-coin"></i>
+              Payments
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Page Content Holder -->
+      <div id="content">
+        <div class="container">
+          <!-- Page Content  -->
+          <!-- Gay -->
+          <div id="content-main" class="">
+            <div class="container-fluid">
+              <div><h2>Payments</h2></div>
+            </div>
+            <div class="container-input-text" id="main">
+              <div class="form-group active">
+                <div class="col-lg-2 text-center align-items-center"></div>
+                <div class="col-lg-2 text-center">
+                  <label
+                    for="input-type"
+                    style="font-weight: bold; font-size: 1.2em"
+                    >Input quantity credit</label
+                  >
+                </div>
+                <div class="col-lg-2 text-center">
+                  <label
+                    for="input-type"
+                    style="font-weight: bold; font-size: 1.2em"
+                    >Input cost</label
+                  >
+                </div>
+              </div>
+              <div class="form-group col-lg-12 col-sm-12">
+                <div class="col-lg-2 text-center">
+                  <label
+                    for="input-type"
+                    style="font-weight: bold; font-size: 1.6em"
+                    >Credit 1</label
+                  >
+                </div>
+                <div class="col-lg-2">
+                  <input
+                    type="number"
+                    min="0"
+                    class="form-control input-thousand"
+                    id="quantity-credit1"
+                    placeholder="Input quatity credit"
+                    style="display: block"
+                  />
+                </div>
+                <div class="col-lg-2">
+                  <input
+                    type="number"
+                    min="0"
+                    class="form-control input-thousand"
+                    id="cost-credit1"
+                    placeholder="Input cost"
+                    style="display: block"
+                  />
+                </div>
+              </div>
+              <div class="form-group col-lg-12">
+                <div class="col-lg-2 text-center align-items-center">
+                  <label
+                    for="input-type"
+                    style="font-weight: bold; font-size: 1.6em"
+                    >Credit 2</label
+                  >
+                </div>
+
+                <div class="col-lg-2">
+                  <input
+                    type="number"
+                    min="0"
+                    class="form-control input-thousand"
+                    id="quantity-credit2"
+                    placeholder="Input quatity credit"
+                    style="display: block"
+                  />
+                </div>
+                <div class="col-lg-2">
+                  <input
+                    type="number"
+                    min="0"
+                    class="form-control input-thousand"
+                    id="cost-credit2"
+                    placeholder="Input cost"
+                    style="display: block"
+                  />
+                </div>
+              </div>
+              <div class="form-group col-lg-12">
+                <div class="col-lg-2 text-center align-items-center">
+                  <label
+                    for="input-type"
+                    style="font-weight: bold; font-size: 1.6em"
+                    >Credit 3</label
+                  >
+                </div>
+                <div class="col-lg-2">
+                  <input
+                    type="number"
+                    min="0"
+                    class="form-control input-thousand"
+                    id="quantity-credit3"
+                    placeholder="Input quatity credit"
+                    style="display: block"
+                  />
+                </div>
+                <div class="col-lg-2">
+                  <input
+                    type="number"
+                    min="0"
+                    class="form-control input-thousand"
+                    id="cost-credit3"
+                    placeholder="Input cost"
+                    style="display: block"
+                  />
+                </div>
+              </div>
+              <div class="form-group col-lg-12">
+                <div class="col-lg-2 text-center align-items-center">
+                  <label
+                    for="input-type"
+                    style="font-weight: bold; font-size: 1.6em"
+                    >Credit 4</label
+                  >
+                </div>
+
+                <div class="col-lg-2">
+                  <input
+                    type="number"
+                    min="0"
+                    class="form-control input-thousand"
+                    id="quantity-credit4"
+                    placeholder="Input quatity credit"
+                    style="display: block"
+                  />
+                </div>
+                <div class="col-lg-2">
+                  <input
+                    type="number"
+                    min="0"
+                    class="form-control input-thousand"
+                    id="cost-credit4"
+                    placeholder="Input cost"
+                    style="display: block"
+                  />
+                </div>
+              </div>
+              <div class="form-group col-lg-12">
+                <div class="col-lg-2 text-center align-items-center">
+                  <label
+                    for="input-type"
+                    style="font-weight: bold; font-size: 1.6em"
+                    >Credit 5</label
+                  >
+                </div>
+
+                <div class="col-lg-2">
+                  <input
+                    type="number"
+                    min="0"
+                    class="form-control input-thousand"
+                    id="quantity-credit5"
+                    placeholder="Input quatity credit"
+                    style="display: block"
+                  />
+                </div>
+                <div class="col-lg-2">
+                  <input
+                    type="number"
+                    min="0"
+                    class="form-control input-thousand"
+                    id="cost-credit5"
+                    placeholder="Input cost"
+                    style="display: block"
+                  />
+                </div>
+              </div>
+              <div class="form-group col-lg-12">
+                <div class="col-lg-2 text-center align-items-center">
+                  <label
+                    for="input-type"
+                    style="font-weight: bold; font-size: 1.6em"
+                    >Credit 6</label
+                  >
+                </div>
+
+                <div class="col-lg-2">
+                  <input
+                    type="number"
+                    min="0"
+                    class="form-control input-thousand"
+                    id="quantity-credit6"
+                    placeholder="Input quatity credit"
+                    style="display: block"
+                  />
+                </div>
+                <div class="col-lg-2">
+                  <input
+                    type="number"
+                    min="0"
+                    class="form-control input-thousand"
+                    id="cost-credit6"
+                    placeholder="Input cost"
+                    style="display: block"
+                  />
+                </div>
+              </div>
+              <div class="form-group col-lg-12">
+                <div class="col-lg-2 text-center align-items-center"></div>
+
+                <div class="col-lg-9">
+                  <button
+                    type="button"
+                    class="btn btn-primary btn-credit"
+                    id="submit-btn"
+                    style="margin: 10px 0% 10px 0%"
+                  >
+                    Submit Credit
+                  </button>
+                </div>
+              </div>
+
+              <!-- input text -->
+              <div
+                class="row justify-content-center align-items-center mt-4"
+                id="container-form"
+              ></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- UI Pay Page Demo   -->
+        <div id="pay-page-demo">
+          <div class="container-demo">
+            <section class="container-decription">
+              <h2>Chọn gói Credit phù hợp - Hiện tại</h2>
+            </section>
+            <section class="container-credits">
+              <div class="container-credit">
+                <div class="container-credit-text">
+                  <div class="paymoney-text">
+                    <div class="paymoney-text-credit">
+                      <h1 id="credit-1">15</h1>
+                      <p>Credit</p>
+                    </div>
+                    <p id="pay-credit-1">300,000d</p>
+                  </div>
+                </div>
+                <div class="paymoney-link">
+                  <p id="pay-per-credit1">20,000 vnd/credit</p>
+                  <i id="save-text-credit1" style="opacity: 0">Tiet kiem ?</i>
+                  <a href="#">Chọn</a>
+                </div>
+              </div>
+              <div class="container-credit">
+                <div class="container-credit-text">
+                  <div class="paymoney-text">
+                    <div class="paymoney-text-credit">
+                      <h1 id="credit-2">#</h1>
+                      <p>Credit</p>
+                    </div>
+                    <p id="pay-credit-2">#</p>
+                  </div>
+                </div>
+                <div class="paymoney-link">
+                  <p id="pay-per-credit2">#</p>
+                  <i id="save-text-credit2">#</i>
+                  <a href="#">Chọn</a>
+                </div>
+              </div>
+              <div class="container-credit">
+                <div class="container-credit-text popular">
+                  <div class="paymoney-text">
+                    <div class="paymoney-text-credit">
+                      <h1 id="credit-3">#</h1>
+                      <p>Credit</p>
+                    </div>
+                    <p id="pay-credit-3">#</p>
+                  </div>
+                </div>
+                <div class="paymoney-link">
+                  <p id="pay-per-credit3">#</p>
+                  <i id="save-text-credit3">#</i>
+                  <a href="#">Chọn</a>
+                </div>
+              </div>
+              <div class="container-credit">
+                <div class="container-credit-text">
+                  <div class="paymoney-text">
+                    <div class="paymoney-text-credit">
+                      <h1 id="credit-4">#</h1>
+                      <p>Credit</p>
+                    </div>
+                    <p id="pay-credit-4">#</p>
+                  </div>
+                </div>
+                <div class="paymoney-link">
+                  <p id="pay-per-credit4">#</p>
+                  <i id="save-text-credit4">#</i>
+                  <a href="#">Chọn</a>
+                </div>
+              </div>
+              <div class="container-credit">
+                <div class="container-credit-text">
+                  <div class="paymoney-text">
+                    <div class="paymoney-text-credit">
+                      <h1 id="credit-5">#</h1>
+                      <p>Credit</p>
+                    </div>
+                    <p id="pay-credit-5">#</p>
+                  </div>
+                </div>
+                <div class="paymoney-link">
+                  <p id="pay-per-credit5">#</p>
+                  <i id="save-text-credit5" style="color: rgb(202, 92, 13)"
+                    >#</i
+                  >
+
+                  <a href="#">Chọn</a>
+                </div>
+              </div>
+              <div class="container-credit">
+                <div class="container-credit-text">
+                  <div class="paymoney-text">
+                    <div class="paymoney-text-credit">
+                      <h1 id="credit-6">#</h1>
+                      <p>Credit</p>
+                    </div>
+                    <p id="pay-credit-6">#</p>
+                  </div>
+                </div>
+                <div class="paymoney-link">
+                  <p id="pay-per-credit6">#</p>
+                  <i id="save-text-credit6" style="color: rgb(202, 92, 13)"
+                    >#</i
+                  >
+                  <a href="#">Chọn</a>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- JavaScript Bundle with Popper -->
+
+    <script src="../js/storage.js"></script>
+    <script src="../js/UIPay.js"></script>
+    <script src="../js/payments.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://nosir.github.io/cleave.js/dist/cleave.min.js"></script>
+    <script src="https://nosir.github.io/cleave.js/dist/cleave-phone.i18n.js"></script>
+    <!-- <script src="../js/cleave.js-master/dist/cleave.min.js"></script> -->
+    <script>
+      var cleave = new Cleave(".input-thousand", {
+        // block: [3, 3, 3, 3],
+        // delimeter: ",",
+        numeral: true,
+        numeralThousandsGroupStyle: "thousand",
+      });
+    </script>
+  </body>
+</html>

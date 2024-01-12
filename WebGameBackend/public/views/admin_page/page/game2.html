@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Game2 Page</title>
+
+    <!-- CSS only -->
+    <link
+      href="../css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css"
+      integrity="sha512-Oy+sz5W86PK0ZIkawrG0iv7XwWhYecM3exvUtMKNJMekGFJtVAhibhRPTpmyTj8+lJCkmWfnpxKgT2OopquBHA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="../css/3.3.5-bootstrap.min.css"
+    />
+
+    <style>
+      table .bi-check-circle-fill {
+        color: green;
+      }
+
+      table .bi-x-circle-fill {
+        color: red;
+      }
+
+      table .btn.btn-danger {
+        font-size: 14px;
+      }
+
+      .hide {
+        display: none;
+      }
+    </style>
+    <link rel="stylesheet" href="../css/game2.css" />
+
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <!-- Sidebar Holder -->
+      <nav id="sidebar">
+        <div class="sidebar-header" id="sidebar-title">
+          <h3><i class="bi bi-envelope-paper-heart-fill"></i> Admin Page</h3>
+          <strong><i class="bi bi-list"></i></strong>
+        </div>
+
+        <ul class="list-unstyled components">
+          <li class="">
+            <a href="../index.html">
+              <i class="bi bi-house"></i>
+              Home
+            </a>
+          </li>
+          <li class="">
+            <a href="./game1.html">
+              <i class="bi bi-image"></i>
+              Game 1
+            </a>
+          </li>
+          <li class="active">
+            <a href="./game2.html">
+              <i class="bi bi-clipboard"></i>
+              Game 2
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Page Content Holder -->
+      <div id="content">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+            <div><h2>Question</h2></div>
+          </div>
+        </nav>
+
+        <div class="container-input-text" id="main">
+          <div class="form-group col-lg-12 mb-4">
+            <div class="col-lg-1">
+              <label
+                for="input-type"
+                class="col-sm-4"
+                style="font-weight: bold; font-size: 1.6em"
+                >Level</label
+              >
+            </div>
+            <div class="col-lg-2">
+              <select class="form-control" id="input-type-level">
+                <option>Level 1</option>
+                <option>Level 2</option>
+                <option>Level 3</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- input text -->
+          <div
+            class="row justify-content-center align-items-center mt-4"
+            id="container-form"
+          >
+            <div class="col-lg-6">
+              <form>
+                <div class="form-group row mb-3">
+                  <label for="input-no" class="col-sm-3 col-form-label"
+                    >No</label
+                  >
+                  <div class="col-sm-9">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="input-no"
+                      placeholder="No"
+                      disabled
+                    />
+                  </div>
+                </div>
+                <div class="form-group row mb-3">
+                  <label for="input-question" class="col-sm-3 col-form-label"
+                    >Input Question</label
+                  >
+                  <div class="col-sm-9">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="input-question"
+                      placeholder="Input Question"
+                      style="display: block"
+                    />
+                  </div>
+                </div>
+
+                <div class="form-group row mb-3">
+                  <div class="col-sm-3"></div>
+                  <div class="col-sm-9">
+                    <button
+                      type="button"
+                      class="btn btn-primary"
+                      id="submit-btn"
+                      style="margin: 10px 0% 10px 0%"
+                    >
+                      Submit
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-primary"
+                      id="cancel-btn"
+                      style="margin: 10px 0% 10px 3px; background-color: orange"
+                    >
+                      Cancel
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="container-talble">
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th scope="col">No</th>
+                <th scope="col">Question</th>
+                <th scope="col">Date</th>
+                <th scope="col">Action</th>
+              </tr>
+            </thead>
+            <tbody id="tbody"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script
+           src="../script/bootstrap.bundle.min.js"
+    ></script>
+
+    <script src="../script/storage.js"></script>
+    <script src="../script/game2.js"></script>
+  </body>
+</html>

@@ -1,0 +1,294 @@
+/* ----------------------------------------------------------------
+                        ADMIN STYLE_TOTAL
+----------------------------------------------------------------*/
+/* ---------------------- Home Page -------------------- */
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+/* ---------------------------------------------------
+                 ADMIN STYLE - SIDEBAR STYLE
+----------------------------------------------------- */
+.wrapper {
+  display: flex;
+  align-items: stretch;
+}
+
+#sidebar {
+  min-width: 250px;
+  max-width: 250px;
+  background: #6a56cd;
+  color: #fff;
+  transition: all 0.2s;
+}
+#sidebar a,
+#sidebar a:hover,
+#sidebar a:focus {
+  color: inherit;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+#sidebar a ul li a,
+#sidebar a:hover ul li a,
+#sidebar a:focus ul li a {
+  text-align: left;
+}
+
+#sidebar .sidebar-header {
+  padding: 20px;
+  background: #6a56cd;
+}
+
+#sidebar .sidebar-header strong {
+  display: none;
+  font-size: 1.5em;
+}
+
+#sidebar ul.components {
+  padding: 20px 0;
+}
+
+#sidebar ul li a {
+  padding: 10px;
+  font-size: 1.3em;
+  display: block;
+}
+
+#sidebar ul li a:hover {
+  color: #7386d5;
+  background: #fff;
+}
+
+#sidebar ul li a i {
+  margin-right: 10px;
+}
+
+a[data-toggle=collapse] {
+  position: relative;
+}
+
+a[aria-expanded=false]::before,
+a[aria-expanded=true]::before {
+  content: "\e259";
+  display: block;
+  position: absolute;
+  right: 20px;
+  font-family: "Glyphicons Halflings";
+  font-size: 0.6em;
+}
+
+a[aria-expanded=true]::before {
+  content: "\e260";
+}
+
+ul ul a {
+  font-size: 0.9em !important;
+  padding-left: 30px !important;
+  background: #6d7fcc;
+}
+
+ul.CTAs {
+  padding: 20px;
+}
+
+ul.CTAs a {
+  text-align: center;
+  font-size: 0.9em !important;
+  display: block;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+a.download {
+  background: #fff;
+  color: #7386d5;
+}
+
+a.article,
+a.article:hover {
+  background: #6d7fcc !important;
+  color: #fff !important;
+}
+
+/*----------------------------------------------------------
+             ADMIN STYLE -  SIDEBAR - Media style - Mobile
+  ---------------------------------------------------------------- */
+@media (max-width: 768px) {
+  #sidebar {
+    min-width: 60px;
+    max-width: 70px;
+    text-align: center;
+  }
+  #sidebar .sidebar-header h3,
+#sidebar .CTAs {
+    display: none;
+  }
+  #sidebar .sidebar-header strong {
+    display: block;
+  }
+  #sidebar ul li a {
+    text-align: left;
+  }
+  #sidebar ul li a {
+    padding: 10px 10px;
+    text-align: center;
+    font-size: 0.7em;
+  }
+  #sidebar ul li a i {
+    margin-right: 0;
+    display: block;
+    font-size: 1.8em;
+    margin-bottom: 5px;
+  }
+  #sidebar ul ul a {
+    padding: 10px !important;
+  }
+  #sidebar a[aria-expanded=false]::before,
+#sidebar a[aria-expanded=true]::before {
+    top: auto;
+    bottom: 5px;
+    right: 50%;
+    transform: translateX(50%);
+  }
+  #sidebar ul li.active > a,
+a[aria-expanded=true] {
+    color: #fff;
+    background: #6d7fcc;
+  }
+  #sidebar {
+    margin-left: 0 !important;
+  }
+}
+.container {
+  width: 100%;
+  align-items: center;
+  border-radius: 30px;
+}
+
+#content {
+  width: 100%;
+  padding: 30px;
+  min-height: 100vh;
+  transition: all 0.3s;
+  background: linear-gradient(320deg, rgba(221, 15, 15, 0.9), rgba(147, 24, 208, 0.6));
+}
+
+#content-main {
+  display: inline-block;
+  align-items: center;
+  width: 100%;
+  padding: 50px;
+  margin-top: 30px;
+  background: linear-gradient(320deg, rgba(221, 15, 15, 0.4), rgba(147, 24, 208, 0.1));
+  border-radius: 30px;
+}
+
+.imagePreview {
+  width: 100%;
+  height: 180px;
+  background-position: center center;
+  background: url(http://cliquecities.com/assets/no-image-e3699ae23f866f6cbdf8ba2443ee5c4e.jpg);
+  background-color: #fff;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: inline-block;
+  box-shadow: 0px -3px 6px 2px rgba(0, 0, 0, 0.2);
+}
+
+.btn-upload {
+  width: 100%;
+  margin-top: -5px;
+}
+
+.btn-primary {
+  display: block;
+  border-radius: 0px;
+  box-shadow: 0px 4px 6px 2px rgba(0, 0, 0, 0.2);
+}
+
+.imgUp {
+  margin-bottom: 15px;
+}
+
+.del {
+  position: absolute;
+  top: 0px;
+  right: 15px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  background-color: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+}
+
+.imgAdd {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #4bd7ef;
+  color: #fff;
+  box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  line-height: 30px;
+  margin-top: 0px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.img-add {
+  position: relative;
+  width: 50px;
+  height: 50px;
+}
+
+.btn-submit {
+  margin-top: 10px;
+  color: white;
+  width: 150px;
+  background: rgba(9, 85, 2, 0.9);
+  border-radius: 15px;
+}
+
+.btn-submit:hover {
+  background: linear-gradient(320deg, rgba(60, 206, 47, 0.9), rgba(240, 251, 123, 0.6));
+}
+
+#content-main hr {
+  display: block;
+  margin-top: 20px;
+  padding-top: 10px;
+  background-color: rgba(65, 218, 235, 0.75);
+  border-radius: 6px;
+}
+
+/*----------------------------------------------------------
+             ADMIN STYLE - CONTENT STYLE - Media style - Mobile
+  ---------------------------------------------------------------- */
+@media (max-width: 768px) {
+  #content {
+    padding: 15px;
+  }
+  #content .container {
+    padding: 1px;
+    margin: 1px;
+  }
+  #content-main {
+    width: 100%;
+    padding: 10px;
+  }
+  #content-main h2 {
+    text-align: center;
+  }
+  #content-main img {
+    display: none;
+  }
+  #content-main .imgAdd {
+    margin-left: 50px;
+  }
+  #content-main .imgUp {
+    width: 60%;
+    margin: auto;
+    margin-bottom: 10px;
+  }
+  #content-main a {
+    margin: auto;
+  }
+}/*# sourceMappingURL=admin.css.map */

@@ -1,0 +1,227 @@
+/* ------------------------------------------------
+                      HOME CSS 
+------------------------------------------------ 
+------------------------------------------------ */
+/* ------------------------------------------------
+            Home --- Define variables
+------------------------------------------------ */
+/* Color */
+$home_contaier-color: linear-gradient(160deg, #b0043e, #570357, #990066);
+$home_main-color: linear-gradient(
+  160deg,
+  rgba(146, 3, 108, 0.9),
+  rgba(73, 3, 99, 0.9)
+);
+$home_main-color-name-game: linear-gradient(
+  160deg,
+  rgba(228, 190, 218, 0.438),
+  rgba(81, 7, 108, 0)
+);
+$home_main-color-play-game: linear-gradient(
+  to right,
+  #e3a02b,
+  #f25d06,
+  #e715dc
+);
+$home_main-color-select-game: linear-gradient(
+  to bottom,
+  #e7c781,
+  #ebd9cf,
+  #f15fe9
+);
+
+@mixin boder {
+  border: 2px solid #99ffcc;
+}
+/* Animation */
+@keyframes animate_scale {
+  to {
+    scale: 1.1;
+  }
+}
+@keyframes animate_jump {
+  from {
+    top: 0px;
+  }
+  to {
+    top: 20px;
+  }
+}
+
+/* ------------------------------------------------
+                Home --- Style 
+------------------------------------------------ */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#home-container {
+  display: flex;
+  background: $home_contaier-color;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+#home-container {
+  .home-main {
+    display: grid;
+    grid-template-rows: 100px 1fr;
+    align-items: center;
+
+    .main-header {
+      display: flex;
+      justify-content: center;
+      p {
+        font-weight: 900;
+        font-size: 3rem;
+        color: white;
+        text-shadow: 0px 0px 10px 10px rgba(251, 250, 250, 0.6);
+      }
+    }
+    .main-games {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto;
+      column-gap: 50px;
+
+      .main-game {
+        display: grid;
+        background: $home_main-color;
+        box-shadow: 0px 2px 1px 5px rgba(51, 1, 51, 0.1);
+        padding: 50px;
+        margin: 10px;
+        border-radius: 30px;
+
+        .name-game,
+        .select-option,
+        .img-game,
+        .play-game {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin: 10px 0px 10px 0px;
+        }
+
+        .name-game {
+          color: white;
+          background: $home_main-color-name-game;
+          height: 50px;
+          width: auto;
+          padding: 15px;
+          border-radius: 20px;
+          h2 {
+            font-family: "Chevin Eco", Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 3rem;
+          }
+        }
+        .img-game {
+          height: 80%;
+          margin: 20px;
+          img {
+            position: relative;
+            animation: animate_jump 1s infinite alternate ease-in-out;
+          }
+        }
+        .select-option {
+          margin-top: 20px;
+          margin-bottom: 40px;
+          select {
+            border-radius: 20px;
+            width: 30%;
+            font-size: 1.5rem;
+            text-align: center;
+            background: $home_main-color-select-game;
+            box-shadow: 0px 0px 15px 2px rgba(243, 32, 243, 0.9);
+            color: rgba(185, 91, 187, 0.922);
+          }
+          option {
+            font-family: "Oleo Script", Verdana, Geneva, Tahoma, sans-serif;
+          }
+        }
+        .play-game {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 5px;
+          border-radius: 30px;
+          background: $home_main-color-play-game;
+          border: 5px solid #680391;
+          box-shadow: 0px 0px 15px 2px rgba(243, 32, 243, 0.9);
+          //   width: 300px;
+          margin-left: 25%;
+          margin-right: 25%;
+          animation: animate_scale 2s infinite alternate ease-in-out;
+          a {
+            font-family: "Sigmar One", Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 1.5rem;
+            text-decoration: none;
+            background: none;
+            color: #99ffcc;
+            font-weight: 900;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  #home-container {
+    .home-main {
+      grid-template-rows: 100px 1fr;
+
+      .main-header {
+        p {
+          font-size: 1rem;
+        }
+      }
+      .main-games {
+        column-gap: 10px;
+        .main-game {
+          box-shadow: 0px 2px 1px 5px rgba(51, 1, 51, 0.1);
+          padding: 10px;
+          margin: 5px;
+          border-radius: 5px;
+
+          .name-game {
+            height: 30px;
+            padding: 5px;
+            border-radius: 10px;
+            h2 {
+              font-size: 0.9rem;
+            }
+          }
+          .img-game {
+            margin: 5px;
+            img {
+              height: 50px;
+            }
+          }
+          .select-option {
+            margin-top: 30px;
+            select {
+              border-radius: 20px;
+              font-size: 0.3rem;
+              box-shadow: 0px 0px 15px 2px rgba(243, 32, 243, 0.9);
+            }
+          }
+          .play-game {
+            padding: 5px;
+            border-radius: 30px;
+            border: 1px solid #680391;
+            margin-left: 25%;
+            margin-right: 25%;
+            animation: animate_scale 2s infinite alternate ease-in-out;
+            a {
+              font-size: 0.5rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

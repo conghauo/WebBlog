@@ -1,0 +1,204 @@
+/* ------------------------------------------------
+                      HOME CSS 
+------------------------------------------------ 
+------------------------------------------------ */
+/* ------------------------------------------------
+            Home --- Define variables
+------------------------------------------------ */
+/* Color */
+/* Animation */
+@-webkit-keyframes animate_scale {
+  to {
+    scale: 1.1;
+  }
+}
+@keyframes animate_scale {
+  to {
+    scale: 1.1;
+  }
+}
+@-webkit-keyframes animate_jump {
+  from {
+    top: 0px;
+  }
+  to {
+    top: 20px;
+  }
+}
+@keyframes animate_jump {
+  from {
+    top: 0px;
+  }
+  to {
+    top: 20px;
+  }
+}
+/* ------------------------------------------------
+                Home --- Style 
+------------------------------------------------ */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#home-container {
+  display: flex;
+  background: linear-gradient(160deg, #b0043e, #570357, #990066);
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+#home-container .home-main {
+  display: grid;
+  grid-template-rows: 100px 1fr;
+  align-items: center;
+}
+#home-container .home-main .main-header {
+  display: flex;
+  justify-content: center;
+}
+#home-container .home-main .main-header p {
+  font-weight: 900;
+  font-size: 3rem;
+  color: white;
+  text-shadow: 0px 0px 10px 10px rgba(251, 250, 250, 0.6);
+}
+#home-container .home-main .main-games {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  -moz-column-gap: 50px;
+       column-gap: 50px;
+}
+#home-container .home-main .main-games .main-game {
+  display: grid;
+  background: linear-gradient(160deg, rgba(146, 3, 108, 0.9), rgba(73, 3, 99, 0.9));
+  box-shadow: 0px 2px 1px 5px rgba(51, 1, 51, 0.1);
+  padding: 50px;
+  margin: 10px;
+  border-radius: 30px;
+}
+#home-container .home-main .main-games .main-game .name-game,
+#home-container .home-main .main-games .main-game .select-option,
+#home-container .home-main .main-games .main-game .img-game,
+#home-container .home-main .main-games .main-game .play-game {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0px 10px 0px;
+}
+#home-container .home-main .main-games .main-game .name-game {
+  color: white;
+  background: linear-gradient(160deg, rgba(228, 190, 218, 0.438), rgba(81, 7, 108, 0));
+  height: 50px;
+  width: auto;
+  padding: 15px;
+  border-radius: 20px;
+}
+#home-container .home-main .main-games .main-game .name-game h2 {
+  font-family: "Chevin Eco", Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 3rem;
+}
+#home-container .home-main .main-games .main-game .img-game {
+  height: 80%;
+  margin: 20px;
+}
+#home-container .home-main .main-games .main-game .img-game img {
+  position: relative;
+  -webkit-animation: animate_jump 1s infinite alternate ease-in-out;
+          animation: animate_jump 1s infinite alternate ease-in-out;
+}
+#home-container .home-main .main-games .main-game .select-option {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+#home-container .home-main .main-games .main-game .select-option select {
+  border-radius: 20px;
+  width: 30%;
+  font-size: 1.5rem;
+  text-align: center;
+  background: linear-gradient(to bottom, #e7c781, #ebd9cf, #f15fe9);
+  box-shadow: 0px 0px 15px 2px rgba(243, 32, 243, 0.9);
+  color: rgba(185, 91, 187, 0.922);
+}
+#home-container .home-main .main-games .main-game .select-option option {
+  font-family: "Oleo Script", Verdana, Geneva, Tahoma, sans-serif;
+}
+#home-container .home-main .main-games .main-game .play-game {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  border-radius: 30px;
+  background: linear-gradient(to right, #e3a02b, #f25d06, #e715dc);
+  border: 5px solid #680391;
+  box-shadow: 0px 0px 15px 2px rgba(243, 32, 243, 0.9);
+  margin-left: 25%;
+  margin-right: 25%;
+  -webkit-animation: animate_scale 2s infinite alternate ease-in-out;
+          animation: animate_scale 2s infinite alternate ease-in-out;
+}
+#home-container .home-main .main-games .main-game .play-game a {
+  font-family: "Sigmar One", Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.5rem;
+  text-decoration: none;
+  background: none;
+  color: #99ffcc;
+  font-weight: 900;
+}
+
+@media (max-width: 768px) {
+  #home-container .home-main {
+    grid-template-rows: 100px 1fr;
+  }
+  #home-container .home-main .main-header p {
+    font-size: 1rem;
+  }
+  #home-container .home-main .main-games {
+    -moz-column-gap: 10px;
+         column-gap: 10px;
+  }
+  #home-container .home-main .main-games .main-game {
+    box-shadow: 0px 2px 1px 5px rgba(51, 1, 51, 0.1);
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+  }
+  #home-container .home-main .main-games .main-game .name-game {
+    height: 30px;
+    padding: 5px;
+    border-radius: 10px;
+  }
+  #home-container .home-main .main-games .main-game .name-game h2 {
+    font-size: 0.9rem;
+  }
+  #home-container .home-main .main-games .main-game .img-game {
+    margin: 5px;
+  }
+  #home-container .home-main .main-games .main-game .img-game img {
+    height: 50px;
+  }
+  #home-container .home-main .main-games .main-game .select-option {
+    margin-top: 30px;
+  }
+  #home-container .home-main .main-games .main-game .select-option select {
+    border-radius: 20px;
+    font-size: 0.3rem;
+    box-shadow: 0px 0px 15px 2px rgba(243, 32, 243, 0.9);
+  }
+  #home-container .home-main .main-games .main-game .play-game {
+    padding: 5px;
+    border-radius: 30px;
+    border: 1px solid #680391;
+    margin-left: 25%;
+    margin-right: 25%;
+    -webkit-animation: animate_scale 2s infinite alternate ease-in-out;
+            animation: animate_scale 2s infinite alternate ease-in-out;
+  }
+  #home-container .home-main .main-games .main-game .play-game a {
+    font-size: 0.5rem;
+  }
+}/*# sourceMappingURL=home.css.map */

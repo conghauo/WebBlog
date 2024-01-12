@@ -1,0 +1,14 @@
+@import "./sass/home.css";
+@import "./sass/payment.css";
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}/*# sourceMappingURL=style_total.css.map */

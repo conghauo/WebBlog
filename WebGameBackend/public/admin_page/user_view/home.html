@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Game Page</title>
+
+    <!-- Style -->
+    <link rel="stylesheet" href="../css/home.css" />
+    <link
+      rel="stylesheet"
+      href="../css/fontawesome-free-6.2.0-web/css/all.css"
+    />
+  </head>
+  <body>
+    <main>
+      <section class="game game--0 game--active">
+        <h2 class="name" id="name--0">Game 1</h2>
+        <div class="select-option"></div>
+        <a
+          class="start-game start-game-label start-game-score"
+          href="Game1.html"
+          style="text-decoration: none"
+          >Start</a
+        >
+      </section>
+      <section class="game game--1">
+        <h2 class="name" id="name--0">Game 2</h2>
+        <div class="select-option">
+          <label class="text-level" for="">Level</label>
+
+          <form id="app-cover">
+            <div id="select-box">
+              <input type="checkbox" id="options-view-button" />
+              <div id="select-button" class="brd">
+                <div id="selected-value">
+                  <span>Select level</span>
+                </div>
+                <div id="chevrons">
+                  <i class="fas fa-chevron-up"></i>
+                  <i class="fas fa-chevron-down"></i>
+                </div>
+              </div>
+              <div id="options">
+                <div class="option">
+                  <input
+                    class="s-c top"
+                    type="radio"
+                    name="platform"
+                    value="dribbble"
+                  />
+                  <input
+                    class="s-c bottom"
+                    type="radio"
+                    name="platform"
+                    value="dribbble"
+                  />
+                  <i class="fab fa-dribbble"></i>
+                  <span class="label">Level 1</span>
+                  <span class="opt-val">Level 1</span>
+                </div>
+                <div class="option">
+                  <input
+                    class="s-c top"
+                    type="radio"
+                    name="platform"
+                    value="behance"
+                  />
+                  <input
+                    class="s-c bottom"
+                    type="radio"
+                    name="platform"
+                    value="behance"
+                  />
+                  <i class="fab fa-behance"></i>
+                  <span class="label">Level 2</span>
+                  <span class="opt-val">Level 2</span>
+                </div>
+                <div class="option">
+                  <input
+                    class="s-c top"
+                    type="radio"
+                    name="platform"
+                    value="hackerrank"
+                  />
+                  <input
+                    class="s-c bottom"
+                    type="radio"
+                    name="platform"
+                    value="hackerrank"
+                  />
+                  <i class="fab fa-hackerrank"></i>
+                  <span class="label">Level 3</span>
+                  <span class="opt-val">Level 3</span>
+                </div>
+
+                <div id="option-bg"></div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <a
+          class="start-game start-game-label start-game-score"
+          href="Game2.html"
+          style="text-decoration: none"
+          >Start</a
+        >
+      </section>
+    </main>
+    <script>
+      const game1 = document.querySelector(".game--0");
+      const game2 = document.querySelector(".game--1");
+
+      game1.addEventListener("click", function () {
+        game1.classList.add("game--active");
+        game2.classList.remove("game--active");
+      });
+
+      game2.addEventListener("click", function () {
+        game2.classList.add("game--active");
+        game1.classList.remove("game--active");
+      });
+    </script>
+    <script src="../js/storage.js"></script>
+  </body>
+</html>

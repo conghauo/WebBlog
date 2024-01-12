@@ -1,0 +1,11 @@
+.container-input-text {
+  width: 100%;
+  padding: 50px;
+  margin-top: 30px;
+  background-color: #f8f3ed;
+  border-radius: 30px;
+}
+
+#container-form {
+  padding-top: 30px;
+}
